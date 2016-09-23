@@ -10,7 +10,7 @@ function runner(size)
     C = matmul(A, B, m, k, n);
     t = toc();
 
-    ADJUST=521/size
+    ADJUST=521/size;
     checksum = fletcherSum(floor(ADJUST*C));
 
     disp('{');
